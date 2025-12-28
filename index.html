@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luo Qilai 的魔法爱网站 ✨❤️ / Magical Love Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(120deg, #c6f6d5, #e0f7fa);
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+        h1, h2 {
+            font-family: 'Pacifico', cursive;
+            text-align: center;
+            margin: 30px 0;
+            color: #006400;
+            text-shadow: 2px 2px #b0e0e6;
+        }
+        .section {
+            padding: 50px 20px;
+            position: relative;
+            max-width: 800px;
+            margin: auto;
+            background: rgba(255,255,255,0.85);
+            border-radius: 25px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            margin-bottom: 50px;
+            transition: transform 0.3s;
+        }
+        .section:hover {
+            transform: scale(1.03);
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin: 20px 0;
+        }
+        .heart, .sticker {
+            position: absolute;
+            font-size: 2em;
+            animation: floatStickers 15s linear infinite;
+        }
+        @keyframes floatStickers {
+            0% { transform: translateY(0) translateX(0) rotate(0deg); }
+            100% { transform: translateY(-900px) translateX(50px) rotate(360deg); }
+        }
+        .surprise {
+            display: none;
+            color: #ff69b4;
+            font-weight: bold;
+            font-size: 1.4em;
+            margin-top: 20px;
+        }
+        .clickable:hover {
+            cursor: pointer;
+            color: #ff1493;
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 10px 0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            z-index: 1000;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #006400;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="#section1">Home / 首页</a>
+    <a href="#section2">Our Story / 故事</a>
+    <a href="#section3">Messages / 爱的留言</a>
+    <a href="#section4">Surprises / 惊喜</a>
+</nav>
+
+<h1>亲爱的 Luo Qilai ✨❤️ / Dear Luo Qilai ✨❤️</h1>
+
+<div class="section" id="section1">
+    <h2>Welcome / 欢迎</h2>
+    <p>Welcome to your magical love website 💖 / 欢迎来到你的魔法爱网站 💖</p>
+    <p class="clickable" onclick="revealMessage('msg1')">Click here for a secret message ✨ / 点击这里获取秘密信息 ✨</p>
+    <p id="msg1" class="surprise">I love you more every day ❤️ / 我每天都更爱你 ❤️</p>
+</div>
+
+<div class="section" id="section2">
+    <h2>Our Story / 我们的故事</h2>
+    <p>From the moment we met, you have been my sunshine 🌞 / 从我们相遇的那一刻起，你就是我的阳光 🌞</p>
+    <p>Every memory with you is precious 🌸 / 和你的每段回忆都是珍贵的 🌸</p>
+    <p class="clickable" onclick="revealMessage('msg2')">Click for a hidden thought 💌 / 点击获取隐藏的想法 💌</p>
+    <p id="msg2" class="surprise">You are my dream come true 💖 / 你是我梦想成真 💖</p>
+</div>
+
+<div class="section" id="section3">
+    <h2>Messages / 爱的留言</h2>
+    <p>1. You are my sunshine 🌞 / 你是我每天的阳光 🌞</p>
+    <p>2. I smile every time I think of you 😊 / 每次想到你，我就微笑 😊</p>
+    <p>3. You make the world beautiful 🌸 / 你让我感觉世界很美好 🌸</p>
+    <p>4. I miss you every moment 💌 / 想念你的每一刻 💌</p>
+    <p>5. You are my most special person 💖 / 你是我最特别的人 💖</p>
+</div>
+
+<div class="section" id="section4">
+    <h2>Hidden Surprises / 隐藏惊喜</h2>
+    <p class="clickable" onclick="revealMessage('msg3')">Click me for magic ✨ / 点击我获得魔法 ✨</p>
+    <p id="msg3" class="surprise">🌟 Love shines like stars, never fades ✨ / 爱意像星星一样闪耀，永不熄灭 ✨</p>
+    <p class="clickable" onclick="revealMessage('msg4')">Find another surprise 💫 / 找到另一个惊喜 💫</p>
+    <p id="msg4" class="surprise">You are forever my heart ❤️ / 你永远在我心中 ❤️</p>
+</div>
+
+<!-- Floating hearts and stickers -->
+<div class="heart sticker" style="left:10%; animation-duration: 15s;">❤️</div>
+<div class="heart sticker" style="left:30%; animation-duration: 14s;">💛</div>
+<div class="heart sticker" style="left:50%; animation-duration: 13s;">💚</div>
+<div class="heart sticker" style="left:70%; animation-duration: 12s;">💙</div>
+<div class="heart sticker" style="left:90%; animation-duration: 11s;">💜</div>
+<div class="sticker" style="left:20%; animation-duration: 16s;">🌸</div>
+<div class="sticker" style="left:40%; animation-duration: 18s;">🌟</div>
+<div class="sticker" style="left:60%; animation-duration: 15s;">✨</div>
+<div class="sticker" style="left:80%; animation-duration: 17s;">🎀</div>
+<div class="sticker" style="left:95%; animation-duration: 16s;">🍀</div>
+
+<script>
+function revealMessage(id) {
+    const element = document.getElementById(id);
+    element.style.display = 'block';
+}
+</script>
+
+</body>
+</html>
